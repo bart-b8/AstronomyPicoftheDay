@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-import lorem
+# import lorem
 from private import API_KEY
 
 url = ("https://api.nasa.gov/planetary/apod?"
