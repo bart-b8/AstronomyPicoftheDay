@@ -1,10 +1,8 @@
 import requests
 import streamlit as st
-# import lorem
-from private import API_KEY
 
 url = ("https://api.nasa.gov/planetary/apod?"
-       "api_key="+API_KEY)
+       "api_key="+st.secrets["API_key"])
 
 response = requests.get(url)
 content = response.json()
